@@ -627,8 +627,36 @@ header .navbar ul li a:hover{
     display: none;
 }
 
+.portfolio-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px; 
+    flex-wrap: wrap; 
+    padding: 36px;
+    margin-top: 30px;
+}
 
+.portfolio-box > div:nth-of-type(n+3) {
+    padding-top: 30px; /* Adds 20px top padding to elements starting from the 4th item */
+}
 
+.heading-image {
+    width: 40%;
+}
+
+.heading-image img {
+    width: 100%; 
+    height: auto; /* Maintains aspect ratio */
+    border: 3px solid var(--yellow);
+    border-radius: 3%;
+}
+
+/* Ensuring the link is clickable and has no default styling */
+.heading-image a {
+    display: block; /* Ensures the link covers the entire image */
+    text-decoration: none; /* Removes underline from the link */
+}
 
 
 
