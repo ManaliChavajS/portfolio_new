@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coronary Heart Disease Risk Factors</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #1e3d59;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #1e3d59;
+            border-bottom: 2px solid #ff6f61;
+            padding-bottom: 5px;
+        }
+        p, ul {
+            margin: 15px 0;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #1e3d59;
+            color: white;
+            font-size: 0.9rem;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .view-report-button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .view-report-button:hover {
+            background-color: #e65b50;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Coronary Heart Disease Risk Factors</h1>
+        <p>A Data-Driven Approach</p>
+    </div>
+    
+    <div class="content">
+        <h2>Introduction</h2>
+        <p>Heart disease is a major health concern, requiring data-driven insights to improve prevention and treatment. This report analyzes the HEART dataset, focusing on key hypotheses regarding weight, cholesterol, smoking, and blood pressure.</p>
+        
+        <h2>Methodology</h2>
+        <p>The HEART dataset, analyzed in SAS Viya, contains 5,209 records with 17 columns, including categorical and numerical variables. Statistical techniques such as box plots, bar charts, and scatter plots were applied to examine risk factors.</p>
+        
+        <h2>Data Exploration and Challenges</h2>
+        <ul>
+            <li>Handling Missing Data: Missing values in key fields may impact reliability.</li>
+            <li>Outlier Detection: Anomalies in weight and height could distort findings.</li>
+            <li>Variable Relevance: Identifying the most impactful variables ensures accurate conclusions.</li>
+        </ul>
+        
+        <h2>Hypotheses</h2>
+        <ul>
+            <li><strong>H1:</strong> Weight and cholesterol levels are weakly correlated.</li>
+            <li><strong>H2:</strong> Men tend to weigh more, but extreme obesity is more common in women.</li>
+            <li><strong>H3:</strong> Women smoke less than men but have higher cholesterol levels.</li>
+            <li><strong>H4:</strong> Higher cholesterol is associated with higher blood pressure.</li>
+        </ul>
+        
+        <h2>Key Findings</h2>
+        <ul>
+            <li>Weight and cholesterol levels have a very weak correlation.</li>
+            <li>Men generally weigh more, but women show more extreme obesity cases.</li>
+            <li>Men smoke more, while women consistently show higher cholesterol levels.</li>
+            <li>High cholesterol levels correlate with high blood pressure.</li>
+        </ul>
+        
+        <h2>Recommendations</h2>
+        <ul>
+            <li>Implement smoking cessation programs, especially targeting men.</li>
+            <li>Develop gender-specific obesity management strategies.</li>
+            <li>Strengthen cholesterol screening and dietary interventions for women.</li>
+            <li>Introduce dual screening for cholesterol and blood pressure to identify high-risk individuals.</li>
+        </ul>
+        
+        <h2>Conclusion</h2>
+        <p>Coronary heart disease risk is influenced by smoking, obesity, high cholesterol, and hypertension. Targeted prevention strategies, early detection, and personalized healthcare interventions are essential to improve patient outcomes.</p>
+        
+        <div class="button-container">
+            <a href="./Report.pdf" class="view-report-button">View Full Report</a>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <a href="https://manalichavajs.github.io/portfolio_new/">https://manalichavajs.github.io/portfolio_new/</a>
+    </div>
+</body>
+</html>
