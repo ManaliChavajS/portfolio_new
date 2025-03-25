@@ -656,15 +656,15 @@ header .navbar ul li a:hover{
 }
 
 .portfolio .box-container .box{
-    height: 25rem;
-    width: 40rem;
+    height: 40rem;
+    width: 55rem;
     display: flex;
     justify-content: center;
     align-items: center;
     /* overflow: hidden; */
     cursor: pointer;
     border: none;
-    padding: 1px;
+    padding: 30px;
     border: none;
 
 }
