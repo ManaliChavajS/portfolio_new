@@ -100,8 +100,8 @@ header{
 }
 
 header .user img{
-    height:15rem;
-    width:15rem;
+    height:19rem;
+    width:19rem;
     margin-bottom: 1rem;
     border-radius: 50%;
     object-fit: cover;
@@ -109,12 +109,12 @@ header .user img{
 }
 
 header .user .name{
-    font-size: 3rem;
+    font-size: 3.5rem;
     color:#fff;
 }
 
 header .user .post{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color:#eee;
 }
 
@@ -561,6 +561,10 @@ header .navbar ul li a:hover{
 
 /* contact section */
 
+.contact{
+    min-height: 60vh;
+}
+
 .contact .row{
     display: flex;
     /* align-items: center; */
@@ -611,14 +615,20 @@ header .navbar ul li a:hover{
     display: flex;
     align-items: center;
     font-size: 2rem;
-    color:#eee;
-    padding:1rem 0;
+    color:#fff;
+    padding:1.5rem 0;
     font-weight: normal;
 }
 
 .contact .row .content .info h3 i{
     padding-right: 1rem;
     color:var(--yellow);
+}
+
+.contact .row .content .info h3 a,
+.contact .row .content .info h3 a:visited{
+    text-decoration: underline;
+    color:#fff;
 }
 
 .top{
@@ -656,15 +666,15 @@ header .navbar ul li a:hover{
 }
 
 .portfolio .box-container .box{
-    height: 40rem;
-    width: 55rem;
+    height: 28rem;
+    width: 40rem;
     display: flex;
     justify-content: center;
     align-items: center;
     /* overflow: hidden; */
     cursor: pointer;
     border: none;
-    padding: 30px;
+    padding: 16px;
     border: none;
 
 }
