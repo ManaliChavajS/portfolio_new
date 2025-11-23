@@ -76,10 +76,12 @@
     <section class="home" id="home" data-aos="zoom-in">
 
         <h3>HI THERE !</h3>
-        <h1>I'M <span>Manali Chavaj</span></h1>
+        <h1>I'm <span>Manali Chavaj</span></h1>
         <p>
-            I am pursuing a Master’s in Business Analytics at George Washington University. As a dedicated professional with over 2 years of experience as a Software Engineer, I have a learner mindset and excel in cross-functional collaboration within multinational teams. 
-            I add value to my teams through process optimization and innovative solutions while fostering an inclusive and collaborative environment.
+            Analytical and results-driven Business Analyst with over 2 years of experience leading requirement gathering, process documentation,
+and data-driven workflow optimization across cross-functional teams in Agile environments. Skilled in translating complex business
+needs into actionable technical and analytical solutions that enhance operational efficiency and strategic decision-making. Experienced
+in stakeholder management, KPI reporting, and developing interactive dashboards using Tableau, SQL, and Salesforce data.
         </p>
         <a href="#about"><button class="btn">Wanna know more about me <i class="fas fa-user"></i></button></a>
 
@@ -185,6 +187,19 @@
         
     <div class="box-container" id="experience">
         <h1 class="heading" data-aos="zoom-in"> <span>My </span>Experience</h1>
+        <!-- BUSINESS TECHNOLOGY ANALYST INTERN Role -->
+        <div class="experince-box" data-aos="fade-right">
+            <i class="fa-solid fa-briefcase"></i>
+            <span>Business Technology Analyst Intern</span>
+            <p><strong>Conseqta Technology LLC</strong> - Arlington, VA</p>
+            <p>Aug 2025 - Oct 2025</p>
+            <p>
+              &#x2022; Led cross-functional requirement-gathering and process-mapping workshops with business and technical teams to identify inefficiencies and define project scope, resulting in streamlined workflows and clear specifications for development teams. <br>
+              &#x2022; Performed advanced SQL and Excel data analysis to evaluate performance metrics, uncover process bottlenecks, and quantify improvement opportunities, delivering insights that improved reporting efficiency and enhanced decision-making. <br>
+              &#x2022; Designed and deployed interactive Tableau dashboards and KPI reports to monitor business performance across departments, automating manual reporting tasks and enabling leadership to make data-driven decisions 40% faster. <br>
+              &#x2022; Collaborated with Agile teams during sprint cycles to create user stories, validate acceptance criteria, and support UAT, ensuring analytics and automation solutions were delivered accurately and improved process accuracy by 15%. <br>
+            </p>
+        </div>
         <div class="experince-box" data-aos="fade-right">
             <i class="fa-solid fa-briefcase"></i>
             <span>Software Engineer</span>
@@ -278,6 +293,11 @@
                         <img class="p-img" src="./project3.jpeg" alt="Project 3">
                     </a>
                 </div>  
+                <div class="box" data-aos="fade-right">
+                    <a href="./project4.html">
+                        <img class="p-img" src="./AQI.jpeg" alt="CleanAir Futures International">
+                    </a>
+                </div>  
         </div>
         
         
@@ -300,20 +320,13 @@
                 <h3 class="title">contact information</h3>
 
                 <div class="info">
-                    <h3> <i class="fas fa-envelope"></i>chavajmanali@gmail.com </h3>
+                    <h3> <i class="fas fa-envelope"></i><a href="mailto:chavajmanali@gmail.com">chavajmanali@gmail.com</a> </h3>
 
                     <h3> <i class="fas fa-map-marker-alt"> </i> Washington, DC</h3>
                 </div>
 
             </div>
 
-            <form id="contact-form" name="Form" data-aos="fade-left">
-                <input type="text" placeholder="name" class="box" name="name" id="name">
-                <input type="email" placeholder="email" class="box" name="email" id="email">
-                <textarea cols="30" rows="10" placeholder="message" class="box message" name="message"
-                    id="message"></textarea>
-                <button class="btn" id="btn" type="submit"> Send <i class="fas fa-paper-plane"></i></button>
-            </form>
         </div>
 
     </section>
@@ -352,29 +365,32 @@
     <!-- Function to send mail -->
     <script>
         window.onload = function () {
-            document.getElementById('contact-form').addEventListener('submit', function (event) {
-                event.preventDefault();
-
-                // Get the form input values
-                var name = document.getElementById('name').value;
-                var email = document.getElementById('email').value;
-                var message = document.getElementById('message').value;
-
-                // Validate the form inputs
-                if (name === '' || email === '' || message === '') {
-                    showToast("Please fill in all the fields.");
-                } else {
-                    // All fields are filled, proceed with sending the email
-                    emailjs.sendForm('service_a0xlccf', 'template_d8bqlqv', this)
-                        .then(function () {
-                            showToast("Thank you for connecting. \n I will get back to you shortly...");
-                            resetForm();
-                            scrollToTop();
-                        }, function (error) {
-                            showToast("Failed to send email. Please try again.");
-                        });
-                }
-            });
+            var contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function (event) {
+                    event.preventDefault();
+    
+                    // Get the form input values
+                    var name = document.getElementById('name').value;
+                    var email = document.getElementById('email').value;
+                    var message = document.getElementById('message').value;
+    
+                    // Validate the form inputs
+                    if (name === '' || email === '' || message === '') {
+                        showToast("Please fill in all the fields.");
+                    } else {
+                        // All fields are filled, proceed with sending the email
+                        emailjs.sendForm('service_a0xlccf', 'template_d8bqlqv', this)
+                            .then(function () {
+                                showToast("Thank you for connecting. \n I will get back to you shortly...");
+                                resetForm();
+                                scrollToTop();
+                            }, function (error) {
+                                showToast("Failed to send email. Please try again.");
+                            });
+                    }
+                });
+            }
         };
 
 

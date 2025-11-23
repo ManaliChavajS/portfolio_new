@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanAir Futures International – Project Summary</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: #1e3d59;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.4rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            margin-top: 20px;
+        }
+
+        .button-row .button-container {
+            margin-top: 0;
+        }
+
+        .view-report-button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .view-report-button:hover {
+            background-color: #e65b50;
+        }
+
+        .content {
+            max-width: 1150px;
+            margin: 20px auto;
+            background: white;
+            padding: 25px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #1e3d59;
+            border-bottom: 2px solid #ff6f61;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .footer {
+            background-color: #1e3d59;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>CleanAir Futures International</h1>
+        <p class="subtitle">Environmental & Health Data Integration | Predictive Modeling</p>
+    </div>
+
+    <div class="button-row">
+    <div class="button-container">
+        <a href="./AQI_Presentation.pdf" class="view-report-button">
+            View Full Presentation
+        </a>
+    </div>
+    <div class="button-container">
+        <a href="./AQI_Report.pdf" class="view-report-button">
+            View Full Report
+        </a>
+    </div>
+</div>
+
+    <div class="content">
+
+        <h2>Introduction</h2>
+        <p>
+            CleanAir Futures International (CAFI) is a global nonprofit dedicated to improving air quality
+            and protecting public health. By integrating IoT-based air quality data with WHO health indicators,
+            CAFI identifies the countries facing the highest environmental and health burdens.
+        </p>
+        <p>
+            Air pollution contributes to nearly 7 million premature deaths each year. Understanding these 
+            patterns helps guide targeted interventions and more efficient policymaking.
+        </p>
+
+        <h2>Data Processing</h2>
+        <ul>
+            <li><strong>Air Quality & Health Dataset</strong>: 88,489 records, 12 columns</li>
+            <li><strong>WHO Demographics Dataset</strong>: 594 records, 54 columns</li>
+            <li><strong>Global AQI Dataset</strong>: 16,695 records, 14 columns</li>
+            <li>Key processing tasks: Cleaning, integration, standardizing keys, handling missing data</li>
+        </ul>
+
+        <h2>Models Developed</h2>
+        <ul>
+            <li><strong>Linear Regression Models (A, B, C)</strong><br>
+                Used 3–5 features with RMSE ranging from 40.59 to 39.78
+            </li>
+            <li><strong>Random Forest Classification</strong><br>
+                10 trees, max depth 5, accuracy: 60.33%
+            </li>
+            <li>Primary goal: Identify AQI predictors and classify pollution risk categories</li>
+        </ul>
+
+        <h2>Additional Data Insights</h2>
+        <ul>
+            <li>UHC Coverage Index: Shows variability in essential health services</li>
+            <li>Vaccine and tobacco prevalence comparisons across most polluted countries</li>
+        </ul>
+
+        <h2>Key Findings</h2>
+        <ul>
+            <li>Local factors like temperature and humidity showed no meaningful impact on AQI</li>
+            <li>Higher AQI correlates with higher child mortality and lower life expectancy</li>
+            <li>Model C captured ~14% of AQI variation using 5 health metrics</li>
+            <li>Pollution hotspots: Republic of Korea, Bahrain, Pakistan, Mauritania, Guinea-Bissau</li>
+        </ul>
+
+        <h2>Policy Recommendations</h2>
+        <ul>
+            <li>Use combined AQI + mortality metrics to identify Tier 1 priority countries</li>
+            <li>Deploy fixed monitoring sites in cleaner, at-risk regions</li>
+            <li>Use mobile short-term programs for severely polluted areas</li>
+            <li>Incorporate equity, feasibility, and infrastructure considerations</li>
+        </ul>
+
+        <h2>Future Work</h2>
+        <ul>
+            <li>Introduce real-time AQI + health monitoring APIs</li>
+            <li>Add socioeconomic and structural factors to models</li>
+            <li>Improve class imbalance handling for severely polluted categories</li>
+            <li>Enhance extreme AQI prediction accuracy</li>
+        </ul>
+
+    </div>
+
+    <div class="footer">
+        <a href="https://manalichavajs.github.io/portfolio_new/">Back to Portfolio</a>
+    </div>
+
+</body>
+</html>
