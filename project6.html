@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNP Sales Analysis – Excel Dashboard</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: #1e3d59;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.4rem;
+        }
+
+        .subtitle {
+            font-size: 1.15rem;
+            opacity: 0.85;
+            margin-top: 8px;
+        }
+
+        .button-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .view-report-button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 1rem;
+            display: inline-block;
+        }
+
+        .view-report-button:hover {
+            background-color: #e65b50;
+        }
+
+        .content {
+            max-width: 1150px;
+            margin: 20px auto;
+            background: white;
+            padding: 25px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #1e3d59;
+            border-bottom: 2px solid #ff6f61;
+            padding-bottom: 5px;
+            margin-top: 26px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        /* KPI Cards */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 14px;
+            margin-top: 14px;
+        }
+
+        .stat-card {
+            background: #f8fbff;
+            border: 1px solid #e7eef7;
+            border-radius: 10px;
+            padding: 14px;
+        }
+
+        .stat-card .big {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1e3d59;
+            margin: 0;
+        }
+
+        .stat-card .small {
+            margin: 6px 0 0 0;
+            font-size: 0.95rem;
+            color: #444;
+        }
+
+        /* Dashboard Image */
+        .visualization {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-top: 16px;
+        }
+
+        .visualization img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+        }
+
+        .footer {
+            background-color: #1e3d59;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+            margin-top: 24px;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 950px) {
+            .stats-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        @media (max-width: 600px) {
+            .stats-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>FNP Sales Analysis</h1>
+        <p class="subtitle">Advanced Excel Dashboard | Sales Performance, Trends & Insights</p>
+    </div>
+
+    <div class="button-row">
+        <div class="button-container">
+            <!-- Update link to your hosted Excel file -->
+            <a href="./FNP_Sales.xlsx" class="view-report-button">View Excel Dashboard</a>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <h2>Introduction</h2>
+        <p>
+            This project presents a <strong>Sales Analysis Dashboard</strong> built in <strong>Advanced Excel</strong> for FNP
+            to track revenue, orders, delivery performance, and customer value. The dashboard enables quick filtering
+            by occasion and date and highlights trends across categories, cities, months, and hourly order time.
+        </p>
+
+        <h2>Skills Showcased</h2>
+        <ul>
+            <li>Advanced Excel (Pivot Tables, Pivot Charts, Slicers, Timelines)</li>
+            <li>Dashboard Design & KPI Cards</li>
+            <li>Data Cleaning & Data Modeling</li>
+            <li>Trend Analysis (Monthly & Hourly)</li>
+            <li>Top-N Analysis (Top Cities / Top Products)</li>
+        </ul>
+
+        <h2>Key KPIs</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <p class="big">1000</p>
+                <p class="small">Total Orders</p>
+            </div>
+            <div class="stat-card">
+                <p class="big">₹ 35,20,984.00</p>
+                <p class="small">Total Revenue</p>
+            </div>
+            <div class="stat-card">
+                <p class="big">5.53</p>
+                <p class="small">Order–Delivery Time</p>
+            </div>
+            <div class="stat-card">
+                <p class="big">₹ 3,520.98</p>
+                <p class="small">Avg. Customer’s Sales</p>
+            </div>
+        </div>
+
+        <h2>Dashboard Preview</h2>
+        <div class="visualization">
+            <!-- Replace this image path with your final uploaded dashboard image -->
+            <img src="./assests/FNPExcell2.png" alt="FNP Sales Analysis Dashboard">
+        </div>
+
+        <h2>What the Dashboard Covers</h2>
+        <ul>
+            <li><strong>Revenue by Occasion</strong> (Anniversary, Birthday, Diwali, Holi, Raksha Bandhan, Valentine’s Day)</li>
+            <li><strong>Revenue by Category</strong> (Cakes, Colors, Mugs, Plants, Soft Toys, Sweets, etc.)</li>
+            <li><strong>Top Cities by Orders</strong> to identify high-demand markets</li>
+            <li><strong>Revenue by Month</strong> to track seasonality and peak periods</li>
+            <li><strong>Top Products by Revenue</strong> to identify best-selling items</li>
+            <li><strong>Revenue by Hour (Order Time)</strong> to understand customer purchase behavior</li>
+        </ul>
+
+        <h2>Interactivity</h2>
+        <ul>
+            <li><strong>Occasion Filter</strong> to instantly compare performance across events</li>
+            <li><strong>Date Timelines</strong> to analyze trends over selected periods</li>
+            <li>Consistent layout with KPI cards for quick executive-level reporting</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>
+            This Excel dashboard provides a clear, decision-ready view of sales performance for FNP by combining KPI tracking,
+            trend analysis, and interactive filters. It supports faster business decisions for promotions, inventory planning,
+            and operational improvements.
+        </p>
+
+    </div>
+
+    <div class="footer">
+        <a href="https://manalichavajs.github.io/portfolio_new/">Back to Portfolio</a>
+    </div>
+
+</body>
+</html>

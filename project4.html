@@ -95,6 +95,24 @@
         .footer a:hover {
             text-decoration: underline;
         }
+
+        /* Visualization Images */
+        .visualization {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-top: 20px;
+        }
+
+        .visualization img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+        }
     </style>
 </head>
 
@@ -138,6 +156,12 @@
             <li><strong>Global AQI Dataset</strong>: 16,695 records, 14 columns</li>
             <li>Key processing tasks: Cleaning, integration, standardizing keys, handling missing data</li>
         </ul>
+
+        <h2>Visualization</h2>
+        <div class="visualization">
+            <img src="./assests/Air1.png" alt="air1">
+            <img src="./assests/Air2.png" alt="air2">
+        </div>
 
         <h2>Models Developed</h2>
         <ul>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wtchtwr – AI-Native Analytics Engine for STR</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: #1e3d59;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.4rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.85;
+            margin-top: 8px;
+        }
+
+        .meta {
+            font-size: 0.95rem;
+            opacity: 0.85;
+            margin-top: 10px;
+        }
+
+        .button-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .view-report-button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 1rem;
+            display: inline-block;
+        }
+
+        .view-report-button:hover {
+            background-color: #e65b50;
+        }
+
+        .content {
+            max-width: 1150px;
+            margin: 20px auto;
+            background: white;
+            padding: 25px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #1e3d59;
+            border-bottom: 2px solid #ff6f61;
+            padding-bottom: 5px;
+            margin-top: 28px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 14px;
+            margin-top: 12px;
+        }
+
+        .stat-card {
+            background: #f8fbff;
+            border: 1px solid #e7eef7;
+            border-radius: 8px;
+            padding: 14px;
+        }
+
+        .stat-card .big {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1e3d59;
+            margin: 0;
+        }
+
+        .stat-card .small {
+            margin: 6px 0 0 0;
+            font-size: 0.95rem;
+            color: #444;
+        }
+
+        /* Images (you will add your images here) */
+        .visualization {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-top: 16px;
+        }
+
+        .visualization img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+        }
+
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+            margin-top: 12px;
+        }
+
+        .note {
+            background: #fff7f6;
+            border: 1px solid #ffd2cd;
+            border-radius: 8px;
+            padding: 14px;
+        }
+
+        .footer {
+            background-color: #1e3d59;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+            margin-top: 24px;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 900px) {
+            .stats-grid { grid-template-columns: 1fr; }
+            .two-col { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>wtchtwr</h1>
+        <p class="subtitle">AI-Native Analytics Engine for the Short-Term Rental (STR) Industry</p>
+        <p class="meta">Prepared for: GWSB AI Case Competition | Group 13 – MSBA | Date: 05 December 2025</p>
+    </div>
+
+    <div class="button-row">
+        <div class="button-container">
+            <!-- Update the href to your final PDF file name/path -->
+            <a href="./AI.pdf" class="view-report-button">View Full Presentation</a>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <h2>Introduction</h2>
+        <p>
+            <strong>wtchtwr</strong> is an AI portfolio intelligence co-pilot built for short-term rental operators.
+            It combines structured analytics, review intelligence, and agent workflows to help teams make faster,
+            evidence-backed portfolio decisions. <!-- Based on your deck -->
+        </p>
+
+        <h2>The Problem We Solve</h2>
+        <p>
+            STR managers often operate with scattered data across channels and tools, making it difficult to get clear,
+            verifiable answers about portfolio performance versus the market. wtchtwr addresses this with a centralized,
+            easy-to-use BI “watchtower” for portfolio and competitive performance.
+        </p>
+
+        <h2>Market Context</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <p class="big">76%</p>
+                <p class="small">of STR managers surveyed emphasized the need for smarter pricing and operational efficiency</p>
+            </div>
+            <div class="stat-card">
+                <p class="big">62%</p>
+                <p class="small">of respondents believe AI offers a competitive advantage</p>
+            </div>
+            <div class="stat-card">
+                <p class="big">+5.23%</p>
+                <p class="small">increase in average daily rates (ADR) for upscale listings</p>
+            </div>
+        </div>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li><strong>KPI & Performance Analysis:</strong> Spot portfolio winners/underperformers vs. market at a glance</li>
+            <li><strong>Pricing & Revenue Intelligence:</strong> Identify under/overpriced listings and where price moves matter most</li>
+            <li><strong>Portfolio Triage Engine:</strong> Auto-flags fix-first listings and underpriced winners to prioritize action</li>
+            <li><strong>Sentiment & Review Insights:</strong> Turn reviews into clear themes explaining performance gaps</li>
+            <li><strong>Explainable AI:</strong> Exposes the data, SQL, and reviews behind each recommendation for auditability</li>
+            <li><strong>Expansion Scout:</strong> Reveals high-demand, under-served pockets for smart expansion bets</li>
+        </ul>
+
+        <h2>Visualizations</h2>
+        <!-- Add / replace these image paths with your own -->
+        <div class="visualization">
+            <img src="./assests/group_13_poster_final.jpg" alt="wtchtwr visualization 1">
+
+        </div>
+
+        <h2>Impact</h2>
+        <div class="two-col">
+            <div class="stat-card">
+                <p class="big">~86% reduction</p>
+                <p class="small">in time and cost for a standard BI deep dive</p>
+                <p class="small"><strong>~7 hours → ~1 hour</strong> | <strong>$385 → $55</strong></p>
+            </div>
+            <div class="stat-card">
+                <p class="big">Operational uplift</p>
+                <p class="small">
+                    Triage flags fix-first listings and underpriced winners so actions focus where they drive the most revenue,
+                    and workflows integrate via email/Slack to reduce guessing and speed up issue resolution.
+                </p>
+            </div>
+        </div>
+
+        <h2>Tech Architecture</h2>
+        <p>
+            The platform is designed around a web app experience with an orchestration layer, retrieval/knowledge components,
+            and integrations that support analytics, review intelligence, and agent workflows.
+        </p>
+
+        <h2>Market Opportunity & Business Model</h2>
+        <p>
+            Subscription-based SaaS with tiered monthly plans based on portfolio size:
+        </p>
+        <ul>
+            <li><strong>0–50 listings:</strong> $150/month</li>
+            <li><strong>51–200 listings:</strong> $450/month</li>
+            <li><strong>201–500 listings:</strong> $900/month</li>
+            <li><strong>500+ listings:</strong> from $2,000/month</li>
+        </ul>
+
+        <h2>Risk Considerations & Guardrails</h2>
+        <div class="note">
+            <ul>
+                <li><strong>Bias & accuracy:</strong> Monitor skew and keep humans in control of key decisions</li>
+                <li><strong>Data privacy & PII:</strong> Minimize/mask identifiers and avoid sending raw PII to external APIs/LLMs</li>
+                <li><strong>Hallucinations & reliability:</strong> Ground narratives in KPIs + retrieved reviews, log traceability, and require human review before action</li>
+            </ul>
+        </div>
+
+        <h2>Future Work</h2>
+        <ul>
+            <li>Upgrade intent classification to a learned model (ML/RL) beyond simple keyword matching</li>
+            <li>Deploy fuller agentic capabilities to take actions (e.g., price updates via APIs)</li>
+            <li>Expansion Scout 2.0 with richer demand signals (events, seasonality, travel data)</li>
+            <li>Add built-in risk & compliance monitoring using open data (permits, complaints, violations)</li>
+            <li>Expand integrations across Airbnb, Vrbo, Booking.com, and other channels</li>
+        </ul>
+
+    </div>
+
+    <div class="footer">
+        <a href="https://manalichavajs.github.io/portfolio_new/">Back to Portfolio</a>
+    </div>
+
+</body>
+</html>

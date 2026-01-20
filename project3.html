@@ -73,6 +73,24 @@
         .view-report-button:hover {
             background-color: #e65b50;
         }
+
+        /* Visualization Images */
+        .visualization {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-top: 20px;
+        }
+
+        .visualization img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+        }
     </style>
 </head>
 <body>
@@ -98,6 +116,12 @@
           <li>Data Cleaning</li>
           <li>SQL</li>
         </ul>
+
+        <h2>Visualization</h2>
+        <div class="visualization">
+            <img src="./assests/SAS1.png" alt="saas">
+            <img src="./assests/SAS2.png" alt="sass2">
+        </div>
 
         <h2>Methodology</h2>
         <p>The HEART dataset, analyzed in SAS Viya, contains 5,209 records with 17 columns, including categorical and numerical variables. Statistical techniques such as box plots, bar charts, and scatter plots were applied to examine risk factors.</p>
@@ -135,8 +159,6 @@
         
         <h2>Conclusion</h2>
         <p>Coronary heart disease risk is influenced by smoking, obesity, high cholesterol, and hypertension. Targeted prevention strategies, early detection, and personalized healthcare interventions are essential to improve patient outcomes.</p>
-        
-        
     </div>
     
     <div class="footer">
